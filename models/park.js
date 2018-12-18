@@ -5,15 +5,15 @@ const Park = function (name,ticketPrice){
 }
 
 Park.prototype.addDino = function (dinosaur) {
-  this.dinoCollection.push(dinosaur)
+  this.dinoCollection.push(dinosaur);
 };
 
 Park.prototype.removeDino = function() {
-  this.dinoCollection.pop()
+  this.dinoCollection.pop();
 };
 
 Park.prototype.bestDino = function(dino) {
-  this.dinoCollection.max(dino)
+  this.dinoCollection.max(dino);
 };
 
 module.exports = Park;
