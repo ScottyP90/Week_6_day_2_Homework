@@ -1,19 +1,19 @@
-const Park = function (name,ticket_price){
+const Park = function (name,ticketPrice){
   this.name = name;
-  this.ticket_price = ticket_price;
-  this.dino_collection = []
+  this.ticketPrice = ticketPrice;
+  this.dinoCollection = [];
 }
 
 Park.prototype.addDino = function (dinosaur) {
-  this.dino_collection.push(dinosaur)
+  this.dinoCollection.push(dinosaur)
 };
 
 Park.prototype.removeDino = function() {
-  this.dino_collection.pop()
+  this.dinoCollection.pop()
 };
 
 Park.prototype.bestDino = function(dino) {
-  this.dino_collection.max(dino)
+  this.dinoCollection.max(dino)
 };
 
 module.exports = Park;
